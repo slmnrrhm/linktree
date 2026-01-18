@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 120vh;
+  min-height: 100vh;
   padding: 20px;
   background-image: url("download\ \(4\).gif");
   background-size: cover;
@@ -110,7 +110,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 120vh;
+    min-height: 100vh;
     padding: 20px;
     background-image: url("download\ \(4\).gif");
     background-size: cover;
@@ -141,3 +141,4 @@ body {
     padding: 14px 15px;
   }
 }
+
