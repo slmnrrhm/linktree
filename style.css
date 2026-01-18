@@ -1,0 +1,143 @@
+:root {
+  --orange: orange;
+  --sec-orange: rgb(255, 205, 149);
+  --rust: #ba380b;
+  --zeste: #ffe48f;
+  --creamy-white: #faf3e0;
+  --black: rgba(10, 10, 10, 0.902);
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  font-family: "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120vh;
+  padding: 20px;
+  background-image: url("download\ \(4\).gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.main-container {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pfp-txt {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pfp-txt img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--zeste);
+  box-shadow: 0 4px 10px var(--shadow-color);
+  margin-bottom: 10px;
+}
+
+.pfp-txt h3 {
+  font-size: 1.8rem;
+  color: var(--rust);
+  font-weight: 800;
+}
+
+.pfp-txt p {
+  font-size: 1.1rem;
+  color: #5a3a2a;
+}
+
+.link-tree {
+  width: 100%;
+}
+
+.link-tree ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.link-tree ul li {
+  width: 100%;
+}
+
+.link-tree ul li a {
+  display: block;
+  width: 100%;
+  padding: 18px 20px;
+  background-color: var(--rust);
+  color: var(--creamy-white);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition:
+    transform 0.2s ease,
+    background 0.3s ease;
+}
+
+.link-tree ul li a:hover {
+  transform: translateY(-3px);
+  background-color: #a02e06;
+}
+
+.link-tree ul li a:active {
+  transform: scale(0.98);
+  background-color: #8a2504;
+}
+
+@media (max-width: 380px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+    padding: 20px;
+    background-image: url("download\ \(4\).gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+  .pfp-txt h3 {
+    font-size: 1.4rem;
+  }
+
+  .main-container {
+    width: 100%;
+    max-width: 420px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    backdrop-filter: blur(5px);
+    padding: 30px 20px; 
+    border-radius: 25px; 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); 
+  }
+
+  .link-tree ul li a {
+    font-size: 1rem;
+    padding: 14px 15px;
+  }
+}
